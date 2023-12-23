@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Lato", sans-serif;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  padding-inline: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-block-end: 8rem;
+  background-color: #f5f8fa;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 20px;
+  height: 4rem;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.navigation ul li a {
+  color: #1d2c3c;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01px;
+  text-decoration: none;
+}
+
+.account-button {
+  background-color: #f5f8fa;
+  color: #1d2c3c;
+  width: 91px;
+  height: 40px;
+  font-weight: 700;
+  white-space: nowrap;
+  border-radius: 6px;
+  border: 2px solid #646e7a;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 85px auto 0;
+  display: flex;
+  border-radius: 6px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+    0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+}
+
+.checkout {
+  background-color: #ffffff;
+  flex: 1;
+}
+
+.checkout .title {
+  padding-block: 2.5rem;
+  padding-inline: 3.8rem;
+}
+
+.checkout .title h1 {
+  color: #1d2c3c;
+  font-size: 1.875rem;
+  font-weight: 400;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.checkout .section-border {
+  padding-block: 36px;
+  border-block-start: 2px solid #f5f7fa;
+}
+
+.checkout .support {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  margin: 0 auto;
+  gap: 5px;
+  align-items: start;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1rem;
+  color: #1d2c3c;
+  font-weight: 700;
+}
+
+.checkout .support span {
+  font-weight: 400;
+  color: #646e7a;
+}
+
+.checkout .stripe {
+  display: flex;
+  justify-content: center;
+}
+
+.checkout .submit {
+  width: 570px;
+  height: 52px;
+  background: #038e7d;
+  color: #ffffff;
+  margin-inline: 3.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.checkout form {
+  padding-inline: 3.75rem;
+}
+
+.checkout form .personal-details {
+  display: flex;
+  gap: 30px;
+}
+
+.checkout form .details {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-block-end: 1rem;
+  width: 100%;
+}
+
+.checkout form .details .card-details {
+  display: flex;
+  align-items: center;
+}
+
+.checkout form .details .card-details .card-number {
+  width: 380px;
+}
+
+.checkout form .details .card-details .card-date {
+  width: 110px;
+  text-align: right;
+}
+
+.checkout form .details .card-details .card-cvc {
+  width: 78px;
+}
+
+.checkout form .details label {
+  color: #1d2c3c;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.checkout form .details input {
+  background: #edeff2;
+  border: none;
+  padding-inline: 13px;
+  padding-block: 9px;
+}
+
+.checkout form .details input:focus {
+  outline: none;
+}
+
+.checkout form .details input::placeholder {
+  font-size: 0.875rem;
+  color: #646e7a;
+}
+
+.checkout .personal-info {
+  display: flex;
+  gap: 10px;
+  margin-block-end: 10px;
+  padding-inline: 3.75rem;
+}
+
+.checkout .personal-info .number {
+  border: 2px solid #1179bf;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: 3px solid #1179bf;
+}
+
+.checkout .persoanl-info h2 {
+  color: #1d2c3c;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.16px;
+}
+
+.sidebar {
+  width: 312px;
+  background: #1179bf;
+  padding-inline: 40px;
+  padding-block-start: 40px;
+  color: #ffffff;
+  border-radius: 0px 6px 6px 0px;
+}
+
+.sidebar .content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-block-end: 0.1px solid #ffffff;
+  max-width: 180px;
+}
+
+.sidebar .header .content-info {
+  margin-block-end: 50px;
+}
+
+.sidebar .content .plan {
+  text-decoration: none;
+  color: white;
+  border-bottom: 0.2rem solid #83deff;
+  font-size: 1rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.sidebar .content h2 {
+  font-size: 1.25rem;
+}
+
+.sidebar .content h1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+.sidebar .content h1 span {
+  font-size: 1rem;
+}
+
+.sidebar .content h1 sup {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sidebar .quote {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar .quote h2 {
+  font-style: italic;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.009px;
+  margin-block-start: 40px;
+}
+
+.sidebar .quote-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sidebar .quote-author img {
+  width: 50px;
+  height: 50px;
+  mask: url("assets/Mask.png") center/cover;
+}
+
+.sidebar .quote-author h3 {
+  font-weight: 700;
+}
+
+.sidebar h3 {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.sidebar .renewal {
+  font-style: italic;
+}
+
+.sidebar span {
+  font-weight: 700;
+}
+
+.sidebar small {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.sidebar .details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-weight: 400;
+  padding-block: 38px;
+}
+
+.sidebar .details .details-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer {
+  margin-block-start: 35px;
+  text-align: center;
+  color: #646e7a;
+  margin-bottom: 35px;
+}
+
+.terms {
+  color: #0f6ba9;
+  text-decoration: none;
+}
